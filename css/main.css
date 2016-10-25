@@ -1,0 +1,59 @@
+.portada {
+	background-image: url(../img/portada.jpg) ;
+    background-size: cover;
+    height: 100vh;
+}
+.opaci {
+	height: 100vh;
+    background-color: rgba(85, 40, 111, 0.3);
+}
+.menu {
+	margin-top: 40px;
+	transition: padding 2s;
+}
+
+.menu a {
+	color: white;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 180%;
+	text-decoration: none;
+	margin:0 55px;
+
+}
+.menu-fixed {
+	position:fixed;
+	top:0;
+	left:0px;
+	padding: 20px ;
+	background-color: #DA44FD;
+	margin:0;
+	width:100%;
+	z-index: 1000;
+}
+.foto img {
+	height: 430px;
+	width: 430px;
+	border-radius: 100%;
+	margin: 80px 0;
+}
+.span1 {
+	display: inline-block;
+    color: #f46;
+    font-family: Sacramento;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    -webkit-animation: move 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 1s;
+}
+
+
+
+
+
+
+
