@@ -2,6 +2,8 @@
 	background-image: url(../img/portada.jpg) ;
     background-size: cover;
     height: 100vh;
+
+    z-index: 5;
 }
 .opaci {
 	height: 100vh;
@@ -9,7 +11,12 @@
 }
 .menu {
 	margin-top: 40px;
-	transition: padding 2s;
+	padding-left: 0px;
+	transition: padding , padding-left 1s;
+}
+.menu li {
+	display: inline;
+	margin: 0;
 }
 
 .menu a {
@@ -17,41 +24,40 @@
 	font-family: "Josefin Sans", sans-serif;
 	font-size: 180%;
 	text-decoration: none;
-	margin:0 55px;
-
+	margin:15px;
 }
 .menu-fixed {
 	position:fixed;
 	top:0;
 	left:0px;
-	padding: 20px ;
-	background-color: #DA44FD;
+	padding: 19px;
+	background-color: #AEBD38;
 	margin:0;
 	width:100%;
 	z-index: 1000;
+	padding-left: 400px;
 }
 .foto img {
-	height: 430px;
-	width: 430px;
+	height: 170px;
+	width: 170px;
 	border-radius: 100%;
 	margin: 80px 0;
 }
-.span1 {
-	display: inline-block;
-    color: #f46;
-    font-family: Sacramento;
-    font-size: 40px;
-    text-align: center;
-    position: relative;
-    white-space: nowrap;
-    top: 0;
-    left: 0;
-    -webkit-animation: move 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-delay: 1s;
+.f-1{
+	height: 300px;
+	width: 100%;
+}
+.f-2{
+	
 }
 
 
+
+#maquinas {
+	color: white;
+	font-size: 100px;
+	margin: 20% 0;
+}
 
 
 
