@@ -1,3 +1,6 @@
+$(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");;
+	});
 $(document).ready(function(){
 	var altura = $('.menu').offset().top;
 	
@@ -9,9 +12,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$('#maquinas').load(efectomaquina);
-
-	
+	$('#maquinas').load(efectomaquina);	
 });
 function escribir(){
 		document.getElementById("maquinas").innerText= p.substr(0,num_c)+ "|";

@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+	<div class="se-pre-con"></div>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="portada">
@@ -19,94 +20,64 @@
 					<div class="container">
 						<div class="text-center">
 						 <ul class="menu">
-	              <li><a href="#">Sobre mí</a></li>
-	              <li><a href="#">Mis proyectos</a></li>
-	              <li><a href="#">Mis habilidades</a></li>
-	              <li><a href="#">Contáctame</a></li>
-	            </ul>
-	            <div id="maquinas" >
-	            </div>
-	            <div class="iconos">
-	            	<a href="#"><i class="fa fa-github fa-3x m-20" ></i></a>
-								<a href="#"><i class="fa fa-linkedin fa-3x m-20" ></i></a>
-								<a href="#"><i class="fa fa-gitlab fa-3x m-20"></i></a>
-	            </div>  
+							<li><a href="#sobre">Sobre mí</a></li>
+							<li><a href="#habilidades">Mis habilidades</a></li>
+							<li><a href="#">Mis proyectos</a></li>
+							<li><a href="#">Contáctame</a></li>
+							</ul>
+							<div id="maquinas" >
+							</div>
+							<span class="info" >Desarrolladora Front-end Junior</span>
+							<div class="iconos">
+							<a href="#"><i class="fa fa-github fa-3x m-20" ></i></a>
+							<a href="#"><i class="fa fa-linkedin fa-3x m-20" ></i></a>
+							<a href="#"><i class="fa fa-gitlab fa-3x m-20"></i></a>
+							</div>  
 						</div>
 					</div>
 				</div>
 			</div>	
 		</div>
 	</div>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="sobremi text-center">
+	<section class="p-50" id="sobre">
+		<div class="container" >
+			<div class="row" >
+				<div class="sobremi text-center" >
 					Sobre mí
+					<div class="separador" ></div>
 				</div>
-				<div class="separador"></div>
 			</div>
-			<div class="row pt-50">
+			<div class="row pt-60">
 				<div class="col-md-6 text-center">
 					<img src="img/f6.png">
 				</div>
 				<div class="col-md-6">
 					<div class="descripcion">
-						Hola! 
+						<span class="resaltar" >Hola!</span> 
 						Recuerdo haber obtenido un diploma de ingeniero junior en secundaria desde ahí descubrí que me apasiona la computadora y sobre todo las increíbles cosas que puedo hacer con ella.
 						Soy egresada de Ingeniería de Sistemas y me fascina programar, soy desarrolladora front-end junior y aspiro a ser desarrolladora Full Stack.
 						<span class="resaltar">Ser desarrolladora web va más allá del click o un enter, ser desarrolladora web es analizar, soñar y crear</span>.
 					<img src="img/la-unicornio.png">
+					<span class="premio">Premio obtenido en el 3 spring por nivel tecnico en JavaScript en Laboratoria.</span>
 					</div>
 				</div>
 			</div>
+			<a id="habilidades"></a>
 		</div>
+
 	</section>
-	<section>
-		<div class="container">
+	<section >
+		<div class="container" >
 			<div class="row">
-				<div class="sobremi text-center">
-					Mis Proyectos
-				</div>
-				<div class="separador"></div>
-			</div>
-			<div class="row pt-50">
-				<div class="col-md-6 text-center">
-					<img src="img/respon1.png">
-				</div>
-				<div class="col-md-6 text-center">
-					<img src="img/respon1.png">
-				</div>
-			</div>
-			<div class="row ">
-				<div class="col-md-6 text-center">
-					<img src="img/respon1.png">
-				</div>
-				<div class="col-md-6 text-center">
-					<img src="img/respon1.png">
-				</div>
-			</div>
-			<div class="row pt-50">
-				<div class="col-md-6 text-center">
-					<img src="img/respon1.png">
-				</div>
-				<div class="col-md-6 text-center">
-					<img src="img/respon1.png">
-				</div>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="sobremi text-center">
+				<div class="sobremi text-center" >
 					Mis Habilidades
+					<div class="separador"></div>
 				</div>
-				<div class="separador"></div>
 			</div>
-			<div class="row pt-50">
+			<div class="row pt-60">
 				<ul>
 					<li class="lista">
-						<h2>Front-end</h2>
+						<h3 class="habilidad">Front-end</h3>
 						<!-- HTML5 -->
 				    <p style="width:85%" data-value="85">HTML5</p>
 						<progress max="100" value="85" class="html5">
@@ -138,7 +109,7 @@
 						
 					</li>
 					<li class="lista">
-						<h2>Herramientas</h2>
+						<h3 class="habilidad">Herramientas</h3>
 				    <!-- Python -->
 				    <p style="width:75%" data-value="75">Sublime Text 3</p>
 						<progress max="100" value="75" class="python">
@@ -165,16 +136,54 @@
 			</div>
 		</div>
 	</section>
-	<footer>
-		<div class="bg-black">
-			<div  class="container">
-				<div class="row">
-					<div class="contacto text-center">
-						Contáctame
-					</div>
+	<section class="p-50">
+		<div class="container">
+			<div class="row">
+				<div class="sobremi text-center">
+					Mis Proyectos
 					<div class="separador"></div>
 				</div>
-				<div class="row pt-50">
+			</div>
+			<div class="row pt-60">
+				<div class="col-md-6 text-center">
+					<img class="appmovil" src="img/tinder.jpg">
+					<span class="desc-pro">App - Tinder</span>
+
+				</div>
+				<div class="col-md-6 text-center">
+					<img class="appmovil"  src="img/lyft.jpg">
+					<span class="desc-pro">App - Lyft</span>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-md-6 text-center">
+					<img src="img/respon1.png">
+				</div>
+				<div class="col-md-6 text-center">
+					<img src="img/respon1.png">
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-md-6 text-center">
+					<img src="img/respon1.png">
+				</div>
+				<div class="col-md-6 text-center">
+					<img src="img/respon1.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer >
+		<div class="bg-black p-50">
+			<div  class="container">
+				<div class="row">
+					<div class=" contacto text-center">
+						Contáctame
+						<div class="separador"></div>
+					</div>
+				</div>
+				<div class="row pt-60">
 					<div class="col-md-6">
 						<div class="final">
 							<h3>¡ Llegaste hasta aquí ! ¡ Gracias !</h3>
@@ -185,7 +194,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 pl-100">
 						<div class="ico-contacto">
 							<i class="fa fa-whatsapp fa-2x"></i>
 							<span>931-527-361</span>
@@ -200,7 +209,7 @@
 						</div>
 						<div class="ico-contacto">
 							<i class="fa fa-code-fork fa-2x"></i>
-							<span>github.com/LizRuelas/portafolio2016</span>
+							<span>github.com/LizRuelas</span>
 						</div>
 						<div class="ico-contacto">
 							<i class="fa fa-file-text-o fa-2x"></i>
@@ -208,7 +217,27 @@
 						</div>
 					</div>
 				</div>
+				<div class="row">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
 			</div>
+				
 		</div>
 		<div class="bg-green">
 			<div  class="container">
@@ -221,7 +250,7 @@
 						<a href="ingles.html">Inglés</a>
 					</div>
 					<div class="col-md-3">
-						<a href="#"><i class="fa fa-arrow-circle-o-up fa-2x"></i></a>
+						<a href="#"><i class="fa fa-arrow-circle-o-up subir"></i></a>
 					</div>
 				</div>
 			</div>
@@ -229,6 +258,7 @@
 	</footer>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

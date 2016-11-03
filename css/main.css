@@ -37,8 +37,8 @@
 	position:fixed;
 	top:0;
 	left:0px;
-	padding: 19px;
-	background-color: #75D701;
+	padding: 14px;
+	background-color: #662753;
 	margin:0;
 	width:100%;
 	z-index: 1000;
@@ -48,21 +48,20 @@
 #maquinas {
 	color: white;
 	font-size: 100px;
-	margin: 15% 0;
+	margin: 15% 0 0 0 ;
 	font-family: "Inconsolata" , sans-serif;
 }
 .iconos {
-	margin-top: -170px;
-	padding: 0 30px;
+	margin-top: 10px;
 }
 .iconos i {
-	color: black ;
+	color: white ;
 	height: 60px;
 	width: 60px;
 	padding: 10px 11px;
 }
 .iconos i:hover {
-	background-color: #75D701;
+	background-color: #662753;
 	border-radius: 100%;
 	height: 60px;
 	width: 60px;
@@ -75,21 +74,29 @@
 .descripcion {
 	font-family: "LubalinGraphStdBook", sans-serif;
 	color: #3B4E32;
-	font-size: 20px;
+	font-size: 22px;
 	text-align: justify;
 }
-.pt-50 {
+.p-50 {
 	padding: 50px 0;
 }
+.pt-60 {
+	padding-top: 60px;
+}
+
+.sobremi {
+	font-family: "Inconsolata" , sans-serif;
+	font-size: 35px;
+	padding-top: 10px;
+}
 .resaltar {
-	color: #56A902;
+	background-color: #C576AC;
+	color: white;
 }
-.resaltar:hover {
-	text-decoration: underline;
-}
+
 .descripcion img {
 	display: block;
-    padding-top: 37px;
+    padding-top: 21px;
     margin: 0 46%;
 }
 
@@ -102,10 +109,9 @@
 
 .lista:nth-child(even) { margin-bottom: 5em;}
 
-h2 {
+.habilidad {
 	margin: 0 0 1.5em;
-	border-bottom: 1px solid #ccc;
-	
+	border-bottom: 1px solid #ccc;	
 	padding: 0 0 .25em;
 }
 
@@ -319,25 +325,23 @@ p[data-value]:after {
 	rgba(0,0,0,.2)),
     -moz-linear-gradient( left, #09c, #690);
 }
-.sobremi {
-	font-family: "Inconsolata" , sans-serif;
-    margin-top: 20px;
-    font-size: 38px;
-}
+
 .contacto {
 	font-family: "Inconsolata" , sans-serif;
-    margin-top: 20px;
-    font-size: 38px;
-    color: white;
+	font-size: 35px;
+	padding-top: 10px;
+
+	color: white;
 }
 .bg-black{
 	background-color: black;
+	
 }
 .separador {
 	width: 56px;
 	margin-bottom: 7px ;
 	margin-left: 48%; 
-	border-top: 2px solid #75D701;
+	border-top: 2px solid #662753;
 }
 .final {
 	padding-top: 0;
@@ -350,7 +354,6 @@ p[data-value]:after {
 }
 .ico-contacto {
 	color: white;
-	text-align: center;
 	font-family: "Inconsolata" , sans-serif;
 }
 .ico-contacto span {
@@ -359,10 +362,10 @@ p[data-value]:after {
 }
 .ico-contacto a {
 	color: white;
-	text-decoration: none;
+	
 }
 .bg-green {
-	background-color: #56A902;
+	background-color: #662753;
 	padding: 1em 0em;
 	color: white;
 	font-family: "Inconsolata" , sans-serif;
@@ -397,11 +400,39 @@ body {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-
-    
-    background: rgba(0,0,0,0.8); 
+    background: rgba(197,118,172,0.8); 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(0,0,0,0.4); 
+}
+.se-pre-con{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/preloader.gif) center no-repeat #fff;
+}
+.pl-100 {
+	padding-left: 100px;
+}
+.premio {
+	font-size: 14px;
+
+}
+.appmovil {
+	width: 130px;
+}
+.desc-pro {
+	display: block;
+}
+.info {
+	font-size: 30px;
+	color: white;
+	font-family:  "Inconsolata" , sans-serif;
+}
+.subir {
+	font-size: 29px;
 }
