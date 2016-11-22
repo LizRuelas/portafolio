@@ -9,6 +9,17 @@
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.5); 
 }
+.banderas {
+	position: absolute;
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	z-index: 10;
+}
+.banderas span {
+	color: white;
+	font-size: 30px;
+}
 .menu {
 	margin-top: 50px;
 	padding-left: 0px;
@@ -363,7 +374,7 @@ p[data-value]:after {
 }
 .ico-contacto a {
 	color: white;
-	
+	font-size: 21px;
 }
 .bg-green {
 	background-color: #662753;
@@ -426,6 +437,7 @@ body {
 }
 .appmovil {
 	width: 130px;
+	margin-left: 40%;
 }
 .appdescktop {
 	width: 77%;
