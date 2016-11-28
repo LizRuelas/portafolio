@@ -1,3 +1,4 @@
+
 .portada {
 	background-image: url(../img/portada.jpg) ;
     background-size: cover;
@@ -59,7 +60,7 @@
 #maquinas {
 	color: white;
 	font-size: 100px;
-	margin: 15% 0 0 0 ;
+	margin: 10% 0 0 0 ;
 	font-family: "Inconsolata" , sans-serif;
 }
 .iconos {
@@ -124,6 +125,8 @@
 	margin: 0 0 1.5em;
 	border-bottom: 1px solid #ccc;	
 	padding: 0 0 .25em;
+	font-family: "LubalinGraphStdBook", sans-serif;
+	font-size: 21px;
 }
 
 
@@ -447,12 +450,39 @@ body {
 	display: block;
 }
 .info {
-	font-size: 30px;
+	font-size: 28px;
 	color: white;
 	font-family:  "Inconsolata" , sans-serif;
 }
 .subir {
 	font-size: 29px;
+}
+
+.bajar {
+	color: white;
+	margin-top: 25px;
+	animation: shake 1s cubic-bezier(.36,.07,.19,.97) infinite;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 .imgHabi {
 	width: 50px;
@@ -474,7 +504,6 @@ body {
   position: absolute;
   overflow: hidden;
   top: 0;
-  
   left:  11.5%;
   background-color: rgba(0,0,0,0.6);
   opacity: 0;
@@ -498,29 +527,35 @@ body {
   color: #fff;
   text-align: center;
   position: relative;
-  font-size: 17px;
-  padding: 10px;
+  font-size: 25px;
+  padding-top: 10px;
   background: rgba(0, 0, 0, 0.6);
+  font-family: "LubalinGraphStdBook", sans-serif;
 }
 
 .hovereffect a.info {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #fff;
-  margin: 50px 0 0 0;
-  background-color: transparent;
-  -webkit-transform: translateY(-200px);
-  -ms-transform: translateY(-200px);
-  transform: translateY(-200px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
+	font-size: 20px;
+	color: white;
+	font-family:  "Inconsolata" , sans-serif;
+	border-radius: 8px;
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 14px;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	margin: 50px 0 0 0;
+	background-color: transparent;
+	-webkit-transform: translateY(-200px);
+	-ms-transform: translateY(-200px);
+	transform: translateY(-200px);
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	}
 
 .hovereffect a.info:hover {
-  box-shadow: 0 0 5px #fff;
+  box-shadow: 0 0 5px #662753;
+  color: black;
+  background-color: white;
 }
 
 .hovereffect:hover .overlay {
@@ -547,4 +582,22 @@ body {
   transform: translateY(0px);
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
+}
+
+@media only screen and (max-width: 500px) {
+    #maquinas {
+        font-size: 28px;
+    }
+    .info {
+    	font-size: 16px;
+    }
+    .menu, .menu-fixed {
+    	display: none;
+    }
+    .descripcion {
+    	display: none;
+    }
+    .overlay {
+    	display: none;
+    }
 }
