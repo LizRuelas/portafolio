@@ -3,7 +3,6 @@
 	background-image: url(../img/portada.jpg) ;
     background-size: cover;
     height: 100vh;
-
     z-index: 5;
 }
 .opaci {
@@ -584,6 +583,17 @@ body {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
+.navbar-default {
+	background-color: transparent;
+	border: none;
+}
+	
+.navbar-toggle {
+	background-color:  #662753;
+}
+.navbar-toggle:focus {
+	background-color:  #662753 !important;
+}
 
 @media only screen and (max-width: 500px) {
     #maquinas {
@@ -592,13 +602,14 @@ body {
     .info {
     	font-size: 16px;
     }
-    .menu, .menu-fixed {
+    .menu-fixed {
     	display: none;
+
     }
-    .descripcion {
-    	display: none;
-    }
-    .overlay {
-    	display: none;
-    }
+  	.titulo {
+  		margin-top: 30%;
+  	}
+	.portada {
+		background-position-x: 86%
+	}
 }
