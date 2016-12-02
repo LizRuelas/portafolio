@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="icon" type="img/png" href="img/Ico2.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -18,87 +18,113 @@
 			<div class="portada">
 				<div class="opaci">
 					<div class="container">
-						<div class="text-center">
-						 <ul class="menu">
-	              <li><a href="#">About me</a></li>
-	              <li><a href="#">My Projects</a></li>
-	              <li><a href="#">My Skills</a></li>
-	              <li><a href="#">Contact me</a></li>
-	            </ul>
-	            <div id="maquinas" >
-	            </div>
-	            <span class="info" >Front-end Developer Junior</span>
-	            <div class="iconos">
-	            	<a href="#"><i class="fa fa-github fa-3x m-20" ></i></a>
-								<a href="#"><i class="fa fa-linkedin fa-3x m-20" ></i></a>
-								<a href="#"><i class="fa fa-gitlab fa-3x m-20"></i></a>
-	            </div>  
+						  <nav role="navigation" class="navbar navbar-default">
+				        <div class="navbar-header">
+				            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+				                <span class="sr-only">Toggle navigation</span>
+				                <span class="icon-bar"></span>
+				                <span class="icon-bar"></span>
+				                <span class="icon-bar"></span>
+				            </button>
+				        </div>
+				        <div id="navbarCollapse" class="collapse navbar-collapse text-center">  
+	               <ul class="menu  ">
+									<li><a href="#sobre">Sobre mí</a></li>
+									<li><a href="#habilidades">Mis habilidades</a></li>
+									<li><a href="#proyectos">Mis proyectos</a></li>
+									<li><a href="#contacto">Contáctame</a></li>
+									<li><a href="https://www.linkedin.com/in/liz-ruelas-borda" target="_blank"><i class="fa fa-linkedin fa-2x m-20" ></i></a></li>
+									<div class="banderas">
+										<a href="ingles.html"><img src="img/usa.png"></a>
+										<span>|</span>
+										<a href="index.html"><img src="img/peru.png"></a>
+									</div>
+								</ul>
+								         
+								</div>
+							</nav>
+						<div class="text-center titulo"> 	
+							<div id="maquinas" >
+							</div>
+							<span class="info" >Desarrolladora Web Front-End Junior</span>
+							<div>
+								<a href="#sobre"><i class="fa fa-arrow-circle-down fa-4x bajar"></i></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>	
 		</div>
 	</div>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="sobremi text-center">
-					About me
+	<section class="p-50" id="sobre">
+		<div class="container" >
+			<div class="row" >
+				<div class="sobremi text-center" >
+					Sobre mí
+					<div class="separador" ></div>
 				</div>
-				<div class="separador"></div>
 			</div>
-			<div class="row pt-50">
+			<div class="row pt-60">
 				<div class="col-md-6 text-center">
 					<img src="img/f6.png">
 				</div>
 				<div class="col-md-6">
 					<div class="descripcion">
-						<span class="resaltar" >Hello!</span>
-						I remember having obtained a diploma of engineer junior high school from there I discovered that I am passionate about computer and above all the amazing things I can do with it.
-						I graduated from systems engineering and program fascinates me, I'm front-end developer junior and aspire to be developer Full Stack.
-						<span class="resaltar"> Being web developer goes beyond click or enter, be web developer is to analyze, dream and create</span>.
+						<span class="resaltar"> ¡Hola!</span> 
+						Recuerdo haber obtenido un diploma de ingeniero junior en secundaria, y desde ahí descubrí que me apasiona la computación y sobre todo las increíbles cosas que puedo hacer con ella. Por eso <span class="resaltar"> me fascina programar.</span> Soy Ingeniera de Sistemas y Desarrolladora Front-End Junior, pero aspiro a ser Desarrolladora Full Stack.<br><br>
+						<span class="resaltar">Ser desarrolladora web va más allá de un click o de un enter, es analizar, soñar y crear</span>.
 					<img src="img/la-unicornio.png">
-					<span class="premio">Prize obtained in spring by 3 technical level JavaScript in Laboratoria.</span>
+					<p class="premio text-center">Premio otorgado por <a href="http://laboratoria.la/" target="_blank">Laboratoria</a> por mi nivel tecnico en JavaScript.</p>
 					</div>
 				</div>
 			</div>
+			<a id="habilidades"></a>
 		</div>
+
 	</section>
-	<section>
-		<div class="container">
+	<section >
+		<div class="container" >
 			<div class="row">
-				<div class="sobremi text-center">
-					My Skills
+				<div class="sobremi text-center" >
+					Mis habilidades
+					<div class="separador"></div>
 				</div>
-				<div class="separador"></div>
 			</div>
-			<div class="row pt-50">
+			<div class="row pt-60">
 				<ul>
 					<li class="lista">
-						<h3 class="habilidad">Front-end</h3>
+						<h3 class="habilidad">Front-End</h3>
 						<!-- HTML5 -->
-				    <p style="width:85%" data-value="85">HTML5</p>
+				    <p style="width:85%" data-value="85">
+				    	<img class="imgHabi" src="img/html.png">
+				    </p>
 						<progress max="100" value="85" class="html5">
 							<div class="progress-bar">
-								<span style="width: 80%">85%</span>
+								<span class="f-f" style="font-size:40px">85%</span>
 							</div>
 						</progress>
 						<!-- CSS3 -->
-				    <p style="width:75%" data-value="75">CSS3</p>
+				    <p style="width:75%" data-value="75">
+				    	<img class="imgHabi" src="img/css.png">
+				    </p>
 						<progress max="100" value="75" class="css3">
 							<div class="progress-bar">
 								<span style="width: 75%">75%</span>
 							</div>
 						</progress>
 						<!-- Javascript -->
-				    <p style="width:70%" data-value="70">JavaScript</p>
+				    <p style="width:70%" data-value="70">
+				    	<img class="imgHabi" src="img/js.png">
+				    </p>
 						<progress max="100" value="70" class="css3">
 							<div class="progress-bar">
 								<span style="width: 70%">70%</span>
 							</div>
 						</progress>
 						<!-- jQuery -->
-				    <p style="width:65%" data-value="65">jQuery</p>
+				    <p style="width:65%" data-value="65">
+				    	<img class="imgHabi" src="img/jquery.png">
+				    </p>
 						<progress max="100" value="65" class="jquery">
 							<div class="progress-bar">
 								<span style="width: 65%">65%</span>
@@ -107,23 +133,29 @@
 						
 					</li>
 					<li class="lista">
-						<h3 class="habilidad">Tools</h3>
+						<h3 class="habilidad">Herramientas</h3>
 				    <!-- Python -->
-				    <p style="width:75%" data-value="75">Sublime Text 3</p>
+				    <p style="width:75%" data-value="75">
+				    	<img class="imgHabi" src="img/sublime.png">
+				    </p>
 						<progress max="100" value="75" class="python">
 							<div class="progress-bar">
 								<span style="width: 75%">75%</span>
 							</div>
 						</progress>
 						<!-- PHP -->
-				    <p style="width:65%" data-value="65">GitHub</p>
+				    <p style="width:65%" data-value="65">
+				    	<img class="imgHabi" src="img/git.png">
+				    </p>
 						<progress max="100" value="65" class="php">
 							<div class="progress-bar">
 								<span style="width: 65%">65%</span>
 							</div>
 						</progress>
 						<!-- Node.js -->
-				    <p style="width:30%" data-value="30">Wordpress</p>
+				    <p style="width:30%" data-value="30">
+				    	<img class="imgHabi" src="img/wordpress.png">
+				    </p>
 				    <progress max="100" value="30" class="node-js">
 							<div class="progress-bar">
 								<span style="width: 35%">30%</span>
@@ -134,100 +166,141 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<a id="proyectos"></a>
+	<section class="p-50">
 		<div class="container">
 			<div class="row">
 				<div class="sobremi text-center">
-					My Projects
-				</div>
-				<div class="separador"></div>
-			</div>
-			<div class="row pt-50">
-				<div class="col-md-6 text-center">
-					<img class="appmovil" src="img/tinder.jpg">
-					<span class="desc-pro">App - Tinder</span>
-				</div>
-				<div class="col-md-6 text-center">
-					<img class="appmovil"  src="img/lyft.jpg">
-					<span class="desc-pro">App - Lyft</span>
+					Mis proyectos
+					<div class="separador"></div>
 				</div>
 			</div>
-			<div class="row ">
-				<div class="col-md-6 text-center">
-					<img src="img/respon1.png">
+			<div class="row pt-60">
+				<div class="col-md-6">
+					<div class="hovereffect ">
+				        <img class="appmovil" src="img/lyft.jpg">
+				        <div class="overlay">
+				            <h2>Lyft <br><span style="font-size:small;">(Desarrollo individual)</span></h2>
+				            <a class="info" target="_blank" href="https://lizruelas.github.io/lyft/">Ver Demo</a>
+				            <a class="info" href="#">Ver Código</a>
+				        </div>
+					</div>
 				</div>
 				<div class="col-md-6 text-center">
-					<img src="img/respon1.png">
+					<div class="hovereffect ">
+				        <img class="appmovil" src="img/tinder.jpg">
+				        <div class="overlay">
+				            <h2>Tinder <br><span style="font-size:small;">(Desarrollo en equipo)</span></h2>
+				            <a class="info" href="#">Ver Demo</a>
+				            <a class="info" href="#">Ver Código</a>
+				        </div>
+					</div>
 				</div>
 			</div>
-			<div class="row pt-50">
-				<div class="col-md-6 text-center">
-					<img src="img/respon1.png">
+			<div class="row p-50">
+				<div class="col-md-6">
+					<div class="hovereffect ">
+				        <img class="appdescktop"  src="img/soundrock.png">
+				        <div class="overlay">
+			            	<h2>SoundRock <br><span style="font-size:small;">(Desarrollo en equipo)</span></h2>
+			            	<a class="info" target="_blank" href="https://lizruelas.github.io/soundrock/">Ver Demo</a>
+			            	<a class="info" href="#">Ver Código</a>
+		        		</div>
+					</div>
 				</div>
-				<div class="col-md-6 text-center">
-					<img src="img/respon1.png">
+				<div class="col-md-6 text-center ">
+				    <div class="hovereffect ">
+				        <img class="appdescktop"  src="img/swapi.png">
+				        <div class="overlay">
+				            <h2>SWAPI <br><span style="font-size:small;">(Desarrollo individual)</span></h2>
+				            <a class="info" target="_blank" href="https://lizruelas.github.io/swapiSelect/public">Ver Demo</a>
+	            			<a class="info" href="#">Ver Código</a>
+				        </div>
+				    </div>
+				</div>
+			</div>
+			<div class="row p-50">
+				<div class="col-md-6">
+					<div class="hovereffect ">
+				        <img class="appdescktop"  src="img/trello.png">
+				        <div class="overlay">
+			            	<h2>Trello <br><span style="font-size:small;">(Desarrollo individual)</span></h2>
+			            	<a class="info" target="_blank" href="https://lizruelas.github.io/trello/">Ver Demo</a>
+			            	<a class="info" href="#">Ver Código</a>
+		        		</div>
+					</div>
+				</div>
+				<div class="col-md-6 text-center ">
+				    <div class="hovereffect ">
+				        <img class="appdescktop"  src="img/votacion.png">
+				        <div class="overlay">
+				            <h2>Votaciones 2021<br><span style="font-size:small;">(Desarrollo en equipo)</span></h2>
+				            <a class="info" target="_blank" href="https://lizruelas.github.io/swapiSelect/public">Ver Demo</a>
+	            			<a class="info" href="#">Ver Código</a>
+				        </div>
+				    </div>
 				</div>
 			</div>
 		</div>
 	</section>
 	
-	<footer>
-		<div class="bg-black">
+	<footer >
+	<a id="contacto"></a>
+		<div class="bg-black p-50 visible-lg-block">
 			<div  class="container">
 				<div class="row">
-					<div class="contacto text-center">
-						Contact me
+					<div class=" contacto text-center">
+						Contáctame
+						<div class="separador"></div>
 					</div>
-					<div class="separador"></div>
 				</div>
-				<div class="row pt-50">
+				<div class="row pt-60">
 					<div class="col-md-6">
 						<div class="final">
-							<h3>You get here! Thank you! </h3>
+							<h3>¡ Gracias !</h3>
 							<p>
-								I hope it has been a pleasant moment to meet,
-								as it was mine to do this work for
-								show me a little, if you wish to meet, share information and work together, just enough to make a "click".
+								Espero te haya sido grato conocerme,
+								así como lo fue para mí realizar este trabajo para mostrarte quién soy. Si deseas mayor información o que trabajemos juntos, solo haz un "click" o llámame para conversar.
 							</p>
 						</div>
 					</div>
 					<div class="col-md-6 pl-100">
 						<div class="ico-contacto">
 							<i class="fa fa-whatsapp fa-2x"></i>
-							<span>931-527-361</span>
+							<a href="tel:+511931527361">931-527-361</a>
 						</div>
 						<div class="ico-contacto">
 							<i class="fa fa-skype fa-2x"></i>
-							<span>lizruelas123</span>
+							<a href="skype:lizruelas123?call" >lizruelas123</a>
 						</div>
 						<div class="ico-contacto">
 							<i class="fa fa-google-plus fa-2x"></i>
-							<span>liz.ruelas.borda@gmail.com</span>
+							<a href="mailto:liz.ruelas.borda@gmail.com">liz.ruelas.borda@gmail.com</a>
 						</div>
 						<div class="ico-contacto">
 							<i class="fa fa-code-fork fa-2x"></i>
-							<span>github.com/LizRuelas/portafolio2016</span>
+							<a href="https://github.com/LizRuelas" target="_blank">github.com/LizRuelas</a>
 						</div>
-						<div class="ico-contacto">
-							<i class="fa fa-file-text-o fa-2x"></i>
-							<a href="docs/ruelas.pdf"><span>Descargar CV</span></a>
-						</div>
+						
 					</div>
 				</div>
+				<div class="row text-center">
+					<div class="ico-contacto">
+						<i class="fa fa-file-text-o fa-2x"></i>
+						<a target="_blank" href="docs/liz_ruelas_desarrolladora_web.pdf"><span>Descargar CV</span></a>
+					</div>	
+				</div>
 			</div>
+				
 		</div>
 		<div class="bg-green">
 			<div  class="container">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-6">
 						<span>Liz Ruelas © - 2016</span>
 					</div>
-					<div class="col-md-6 text-center">
-						<a href="index.html">Español</a>
-						<a href="ingles.html">Inglés</a>
-					</div>
-					<div class="col-md-3">
-						<a href="#"><i class="fa fa-arrow-circle-o-up fa-2x"></i></a>
+					<div class="col-md-6">
+						<a href="#"><i class="fa fa-arrow-circle-o-up subir"></i></a>
 					</div>
 				</div>
 			</div>
@@ -235,6 +308,7 @@
 	</footer>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
