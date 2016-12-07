@@ -449,7 +449,7 @@ body {
 .desc-pro {
 	display: block;
 }
-.info {
+.info-dev {
 	font-size: 28px;
 	color: white;
 	font-family:  "Inconsolata" , sans-serif;
@@ -599,10 +599,10 @@ body {
     #maquinas {
         font-size: 28px;
     }
-    .info {
+    .info-dev {
     	font-size: 16px;
     }
-    .menu-fixed {
+    .menu-fixed , .banderas {
     	display: none;
 
     }
@@ -611,5 +611,42 @@ body {
   	}
 	.portada {
 		background-position-x: 86%
+	}
+	.menu li {
+		display: block;
+	}
+	.descripcion {
+		margin-top: 19px;
+		font-size: 16px;
+	}
+	.descripcion span {
+		display: none;
+	}
+	.descripcion img {
+		padding-top: 0;
+		margin: 0 40%;
+	}
+	.tols {
+		padding-left: 15px;
+	}
+	.appmovil {
+		margin-left: 30%;
+	}
+	.hovereffect a.info {
+		font-size:  15px;
+	}
+	.hovereffect {
+		margin-top: 60px;
+	}
+	.appdescktop  {
+		height: 230px;
+		width: 280px;
+		margin-left: 5px;
+	}
+	.pl-100 {
+		padding-left: 10px;
+	}
+	.final , .ico-contacto a {
+		font-size: 18px
 	}
 }
