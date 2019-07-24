@@ -22,7 +22,7 @@ function escribir(){
 		}
 	}
 	function efectomaquina() {
-		p="<Liz Ruelas Borda/>";
+		p="<Liz Ruelas Borda />";
 		num_c=0;
 		escribir();
 	}
