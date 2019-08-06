@@ -1,13 +1,13 @@
 
 .portada {
-	background-image: url(../img/portada3.jpg) ;
+	background-image: url(../img/portada.jpg) ;
     background-size: cover;
     height: 100vh;
     z-index: 5;
 }
 .opaci {
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.5); 
 }
 .banderas {
 	position: absolute;
@@ -23,7 +23,6 @@
 .menu {
 	margin-top: 50px;
 	padding-left: 0px;
-
 	transition: padding , padding-left 1s;
 }
 .menu li {
@@ -39,7 +38,7 @@
 }
 .menu a {
 	color: white;
-	font-family: "Inconsolata", sans-serif;
+	font-family: "LubalinGraphStdBook", sans-serif;
 	font-size: 140%;
 	text-decoration: none;
 	margin:15px;
@@ -50,7 +49,7 @@
 	top:0;
 	left:0px;
 	padding: 14px;
-	background: linear-gradient(to bottom,#1C1C33 0%,#2B0725 100%);
+	background-color: #662753;
 	margin:0;
 	width:100%;
 	z-index: 1000;
@@ -102,7 +101,7 @@
 	padding-top: 10px;
 }
 .resaltar {
-	background-color: #2B0725;
+	background-color: #C576AC;
 	color: white;
 }
 
@@ -123,7 +122,7 @@
 
 .habilidad {
 	margin: 0 0 1.5em;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;	
 	padding: 0 0 .25em;
 	font-family: "LubalinGraphStdBook", sans-serif;
 	font-size: 21px;
@@ -137,23 +136,23 @@ progress:not(value) {
 progress[value] {
 	/* Get rid of the default appearance */
 	appearance: none;
-
+	
 	/* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
 	border: none;
-
+	
 	/* Add dimensions */
 	width: 100%; height: 20px;
-
+	
 	/* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
 	  background-color: whiteSmoke;
 	  border-radius: 3px;
 	  box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
-
+	
 	/* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
 	color: royalblue;
-
+	
 	position: relative;
-	margin: 0 0 1.5em;
+	margin: 0 0 1.5em; 
 }
 
 
@@ -166,10 +165,10 @@ progress[value]::-webkit-progress-bar {
 
 progress[value]::-webkit-progress-value {
 	position: relative;
-
+	
 	background-size: 35px 20px, 100% 100%, 100% 100%;
 	border-radius:3px;
-
+	
 	/* Let's animate this */
 	animation: animate-stripes 5s linear infinite;
 }
@@ -182,10 +181,10 @@ progress[value]::-webkit-progress-value:after {
 	/* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
 	content: '';
 	position: absolute;
-
+	
 	width:5px; height:5px;
 	top:7px; right:7px;
-
+	
 	background-color: white;
 	border-radius: 100%;
 }
@@ -205,10 +204,10 @@ progress[value]::-moz-progress-bar {
 														rgba(255, 255, 255, .25),
 														rgba(0,0,0,.2)),
      -moz-linear-gradient( left, #09c, #f44);
-
+	
 	background-size: 35px 20px, 100% 100%, 100% 100%;
 	border-radius:3px;
-
+	
 	/* Firefox doesn't support CSS3 keyframe animations on progress element. Hence, we did not include animate-stripes in this code block */
 }
 
@@ -225,14 +224,14 @@ progress[value]::-moz-progress-bar {
 .progress-bar span {
 	background-color: royalblue;
 	border-radius: 3px;
-
+	
 	display: block;
 	text-indent: -9999px;
 }
 
-p[data-value] {
-
-  position: relative;
+p[data-value] { 
+  
+  position: relative; 
 }
 
 p[data-value]:after {
@@ -260,7 +259,7 @@ p[data-value]:after {
 }
 
 .css3::-webkit-progress-value,
-.php::-webkit-progress-value
+.php::-webkit-progress-value 
 {
 	/* Gradient background with Stripes */
 	background-image:
@@ -277,7 +276,7 @@ p[data-value]:after {
 }
 
 .jquery::-webkit-progress-value,
-.node-js::-webkit-progress-value
+.node-js::-webkit-progress-value 
 {
 	/* Gradient background with Stripes */
 	background-image:
@@ -351,12 +350,12 @@ p[data-value]:after {
 }
 .bg-black{
 	background-color: black;
-
+	
 }
 .separador {
 	width: 56px;
 	margin-bottom: 7px ;
-	margin-left: 48%;
+	margin-left: 48%; 
 	border-top: 2px solid #662753;
 }
 .final {
@@ -396,32 +395,32 @@ p[data-value]:after {
 	float: right;
 }
 
-/* For the "inset" look only
+/* For the "inset" look only */
 
-body {
+body { 
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
- Let's get this party started
+/* Let's get this party started */
 ::-webkit-scrollbar {
     width: 12px;
 }
-
- Track
+ 
+/* Track */
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 
 }
-
- Handle
+ 
+/* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgba(197,118,172,0.8);
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background: rgba(197,118,172,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(0,0,0,0.4);
-} */
+	background: rgba(0,0,0,0.4); 
+}
 .se-pre-con{
 	position: fixed;
 	left: 0px;
@@ -472,7 +471,7 @@ body {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
+  
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
@@ -486,13 +485,8 @@ body {
   }
 }
 .imgHabi {
-	width: 65px;
-	height: 65px;
-}
-
-.imgHabicms {
-	width: 110px;
-	height: 65px;
+	width: 50px;
+	height: 50px;	
 }
 .hovereffect {
   width: 100%;
@@ -593,7 +587,7 @@ body {
 	background-color: transparent;
 	border: none;
 }
-
+	
 .navbar-toggle {
 	background-color:  #662753;
 }
