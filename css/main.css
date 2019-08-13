@@ -381,7 +381,7 @@ p[data-value]:after {
 	font-size: 21px;
 }
 .bg-green {
-	background-color: #662753;
+	background: linear-gradient(to bottom,#1C1C33 0%,#2B0725 100%);
 	padding: 1em 0em;
 	color: white;
 	font-family: "Inconsolata" , sans-serif;
@@ -491,7 +491,7 @@ body {
 }
 
 .imgHabicms {
-	width: 110px;
+	width: 80px;
 	height: 65px;
 }
 .hovereffect {
